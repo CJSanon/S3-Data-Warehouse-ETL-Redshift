@@ -1,6 +1,6 @@
 {
   "data_asset_type": "Dataset",
-  "expectation_suite_name": "staging_events_expectations_suite",
+  "expectation_suite_name": "sparkify_ge_suite",
   "expectations": [
     {
       "expectation_type": "expect_table_row_count_to_be_between",
@@ -131,8 +131,8 @@
       "expectation_type": "expect_column_max_to_be_between",
       "kwargs": {
         "column": "item_in_session",
-        "max_value": 76,
-        "min_value": 74
+        "max_value": 66,
+        "min_value": 64
       },
       "meta": {
         "BasicSuiteBuilderProfiler": {
@@ -144,8 +144,8 @@
       "expectation_type": "expect_column_mean_to_be_between",
       "kwargs": {
         "column": "item_in_session",
-        "max_value": 14.5,
-        "min_value": 12.5
+        "max_value": 13.6,
+        "min_value": 11.6
       },
       "meta": {
         "BasicSuiteBuilderProfiler": {
@@ -197,8 +197,8 @@
               22
             ],
             [
-              47,
-              49
+              39,
+              41
             ]
           ]
         }
@@ -213,7 +213,7 @@
       "expectation_type": "expect_column_values_to_not_be_null",
       "kwargs": {
         "column": "artist",
-        "mostly": 0.748
+        "mostly": 0.743
       },
       "meta": {
         "BasicSuiteBuilderProfiler": {
@@ -263,12 +263,12 @@
     "BasicSuiteBuilderProfiler": {
       "batch_kwargs": {
         "data_asset_name": "staging_events",
-        "datasource": "sparkify",
+        "datasource": "sparkify_db",
         "limit": 1000,
         "schema": "public",
         "table": "staging_events"
       },
-      "created_at": 1623157540.849154,
+      "created_at": 1624073653.4421978,
       "created_by": "BasicSuiteBuilderProfiler"
     },
     "citations": [
@@ -276,18 +276,18 @@
         "batch_definition": null,
         "batch_kwargs": {
           "data_asset_name": "staging_events",
-          "datasource": "sparkify",
+          "datasource": "sparkify_db",
           "limit": 1000,
           "schema": "public",
           "table": "staging_events"
         },
         "batch_markers": {
-          "ge_load_time": "20210608T130508.054038Z"
+          "ge_load_time": "20210619T033226.731250Z"
         },
         "batch_parameters": null,
         "batch_request": null,
         "batch_spec": null,
-        "citation_date": "2021-06-08T13:05:43.110794Z",
+        "citation_date": "2021-06-19T03:34:15.698017Z",
         "comment": "BasicSuiteBuilderProfiler added a citation based on the current batch."
       }
     ],

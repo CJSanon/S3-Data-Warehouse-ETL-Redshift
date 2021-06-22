@@ -14,13 +14,13 @@ config_version: 3.0
 # You can use the CLI command `great_expectations datasource new` to help you
 # add a new datasource. Read more at https://docs.greatexpectations.io/en/latest/reference/core_concepts/datasource.html
 datasources:
-  sparkify:
+  sparkify_db:
     data_asset_type:
-      class_name: SqlAlchemyDataset
       module_name: great_expectations.dataset
-    credentials: ${sparkify}
-    module_name: great_expectations.datasource
+      class_name: SqlAlchemyDataset
     class_name: SqlAlchemyDatasource
+    module_name: great_expectations.datasource
+    credentials: ${sparkify_db}
 
 # This config file supports variable substitution which enables: 1) keeping
 # secrets out of source control & 2) environment-based configuration changes
@@ -99,6 +99,6 @@ data_docs_sites:
       class_name: DefaultSiteIndexBuilder
 
 anonymous_usage_statistics:
-  data_context_id: 95eb7cfe-f17a-4d21-be63-09fec08baa8c
   enabled: true
+  data_context_id: 02cb5e71-bc2f-4d02-918f-5b10b7d760b1
 notebooks:

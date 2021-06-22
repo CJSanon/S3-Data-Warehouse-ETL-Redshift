@@ -49,6 +49,7 @@ def main():
     None
     
     Returns:
+    Time it took to load the staging tables runs queries for loading the staging tables and transforming the staged data into 5 tables.
     
     """
     config = configparser.ConfigParser()

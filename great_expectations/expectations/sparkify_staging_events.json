@@ -1,0 +1,2364 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "sparkify_staging_events",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "artist",
+          "auth",
+          "first_name",
+          "gender",
+          "item_in_session",
+          "last_name",
+          "length",
+          "level",
+          "location",
+          "method",
+          "page",
+          "registration",
+          "session_id",
+          "song",
+          "status",
+          "ts",
+          "user_agent",
+          "user_id"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 8056,
+        "min_value": 8056
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "artist",
+        "mostly": 0.84
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "artist",
+        "max_value": 0.46158357771261,
+        "min_value": 0.46158357771261
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "artist",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "auth",
+        "value_set": [
+          "Logged In",
+          "Logged Out"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "auth"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "auth",
+        "max_value": 0.00024826216484607745,
+        "min_value": 0.00024826216484607745
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "auth",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "first_name",
+        "value_set": [
+          "Adelyn",
+          "Adler",
+          "Aiden",
+          "Aleena",
+          "Alivia",
+          "Amiya",
+          "Anabelle",
+          "Andrea",
+          "Ann",
+          "Austin",
+          "Ava",
+          "Avery",
+          "Ayla",
+          "Ayleen",
+          "Braden",
+          "Brantley",
+          "Brayden",
+          "Bronson",
+          "Carlos",
+          "Cecilia",
+          "Celeste",
+          "Chloe",
+          "Christian",
+          "Cienna",
+          "Cierra",
+          "Colm",
+          "Connar",
+          "Devin",
+          "Dominick",
+          "Dustin",
+          "Elijah",
+          "Emily",
+          "Evelin",
+          "Gianna",
+          "Hannah",
+          "Harper",
+          "Hayden",
+          "Isaac",
+          "Jacob",
+          "Jacqueline",
+          "Jahiem",
+          "Jaleah",
+          "James",
+          "Jayden",
+          "Jizelle",
+          "Jordan",
+          "Jordyn",
+          "Joseph",
+          "Kaleb",
+          "Kate",
+          "Katherine",
+          "Kaylee",
+          "Kevin",
+          "Kimber",
+          "Kinsley",
+          "Kynnedi",
+          "Layla",
+          "Lily",
+          "Magdalene",
+          "Maia",
+          "Makinley",
+          "Marina",
+          "Martin",
+          "Matthew",
+          "Mohammad",
+          "Molly",
+          "Morris",
+          "Noah",
+          "Preston",
+          "Ryan",
+          "Ryann",
+          "Rylan",
+          "Samuel",
+          "Sara",
+          "Sean",
+          "Shakira",
+          "Sienna",
+          "Stefany",
+          "Sylvie",
+          "Tegan",
+          "Theodore",
+          "Tucker",
+          "Walter",
+          "Wyatt",
+          "Zachary"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "first_name",
+        "mostly": 0.96
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "first_name",
+        "max_value": 0.010939510939510939,
+        "min_value": 0.010939510939510939
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "first_name",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "gender",
+        "value_set": [
+          "F",
+          "M"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "gender",
+        "mostly": 0.96
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "gender",
+        "max_value": 0.0002574002574002574,
+        "min_value": 0.0002574002574002574
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "gender",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "item_in_session",
+        "max_value": 0,
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "item_in_session",
+        "max_value": 127,
+        "min_value": 127
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "item_in_session",
+        "max_value": 21.1,
+        "min_value": 21.1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "item_in_session",
+        "max_value": 13.0,
+        "min_value": 13.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": true,
+        "column": "item_in_session",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              13,
+              13
+            ],
+            [
+              33,
+              33
+            ],
+            [
+              70,
+              70
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "item_in_session",
+        "value_set": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "item_in_session"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "item_in_session",
+        "max_value": 0.015888778550148957,
+        "min_value": 0.015888778550148957
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "item_in_session",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "INT",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType",
+          "DECIMAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "last_name",
+        "value_set": [
+          "Arellano",
+          "Ayala",
+          "Banks",
+          "Barrera",
+          "Barrett",
+          "Bell",
+          "Benjamin",
+          "Benson",
+          "Brock",
+          "Burke",
+          "Burns",
+          "Butler",
+          "Calhoun",
+          "Carter",
+          "Chavez",
+          "Clark",
+          "Colon",
+          "Cook",
+          "Cooper",
+          "Cruz",
+          "Cuevas",
+          "Davidson",
+          "Davis",
+          "Duffy",
+          "Finley",
+          "Fox",
+          "Freeman",
+          "Frye",
+          "Garrison",
+          "Gay",
+          "George",
+          "Gilmore",
+          "Gonzalez",
+          "Graves",
+          "Griffin",
+          "Gutierrez",
+          "Harrell",
+          "Harris",
+          "Hayes",
+          "Herman",
+          "Hess",
+          "Hicks",
+          "Hunt",
+          "Johnson",
+          "Jones",
+          "Jordan",
+          "Kirby",
+          "Klein",
+          "Koch",
+          "Larson",
+          "Lee",
+          "Levine",
+          "Lynch",
+          "Martin",
+          "Martinez",
+          "Miles",
+          "Moreno",
+          "Norris",
+          "Owens",
+          "Parker",
+          "Porter",
+          "Powell",
+          "Ramirez",
+          "Robinson",
+          "Rodriguez",
+          "Rogers",
+          "Rosales",
+          "Roth",
+          "Sanchez",
+          "Sanders",
+          "Santana",
+          "Scott",
+          "Simpson",
+          "Smith",
+          "Summers",
+          "Sutton",
+          "Taylor",
+          "Terrell",
+          "Thomas",
+          "Valdez",
+          "Watkins",
+          "West",
+          "White",
+          "Williams",
+          "Wilson",
+          "Wise",
+          "Young"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "last_name",
+        "mostly": 0.96
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "last_name",
+        "max_value": 0.011196911196911196,
+        "min_value": 0.011196911196911196
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "last_name",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "length",
+        "max_value": 15.0,
+        "min_value": 15.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "length",
+        "max_value": 2594.0,
+        "min_value": 2594.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "length",
+        "max_value": 246.5,
+        "min_value": 246.5
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "length",
+        "max_value": 232.5,
+        "min_value": 232.5
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": true,
+        "column": "length",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              138.0,
+              138.0
+            ],
+            [
+              197.0,
+              197.0
+            ],
+            [
+              232.0,
+              232.0
+            ],
+            [
+              273.0,
+              273.0
+            ],
+            [
+              396.0,
+              396.0
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "length",
+        "value_set": [
+          15.0,
+          18.0,
+          21.0,
+          22.0,
+          24.0,
+          26.0,
+          27.0,
+          30.0,
+          32.0,
+          33.0,
+          35.0,
+          36.0,
+          37.0,
+          38.0,
+          44.0,
+          45.0,
+          46.0,
+          47.0,
+          48.0,
+          50.0,
+          52.0,
+          53.0,
+          54.0,
+          55.0,
+          56.0,
+          57.0,
+          58.0,
+          59.0,
+          60.0,
+          61.0,
+          64.0,
+          65.0,
+          66.0,
+          67.0,
+          68.0,
+          69.0,
+          70.0,
+          71.0,
+          72.0,
+          74.0,
+          76.0,
+          78.0,
+          80.0,
+          84.0,
+          85.0,
+          86.0,
+          87.0,
+          89.0,
+          90.0,
+          92.0,
+          95.0,
+          96.0,
+          97.0,
+          98.0,
+          99.0,
+          100.0,
+          101.0,
+          102.0,
+          103.0,
+          104.0,
+          105.0,
+          106.0,
+          107.0,
+          108.0,
+          109.0,
+          110.0,
+          111.0,
+          112.0,
+          113.0,
+          114.0,
+          115.0,
+          116.0,
+          117.0,
+          118.0,
+          119.0,
+          120.0,
+          121.0,
+          122.0,
+          123.0,
+          124.0,
+          125.0,
+          126.0,
+          127.0,
+          128.0,
+          129.0,
+          130.0,
+          131.0,
+          132.0,
+          133.0,
+          134.0,
+          135.0,
+          136.0,
+          137.0,
+          138.0,
+          139.0,
+          140.0,
+          141.0,
+          142.0,
+          143.0,
+          144.0,
+          145.0,
+          146.0,
+          147.0,
+          148.0,
+          149.0,
+          150.0,
+          151.0,
+          152.0,
+          153.0,
+          154.0,
+          155.0,
+          156.0,
+          157.0,
+          158.0,
+          159.0,
+          160.0,
+          161.0,
+          162.0,
+          163.0,
+          164.0,
+          165.0,
+          166.0,
+          167.0,
+          168.0,
+          169.0,
+          170.0,
+          171.0,
+          172.0,
+          173.0,
+          174.0,
+          175.0,
+          176.0,
+          177.0,
+          178.0,
+          179.0,
+          180.0,
+          181.0,
+          182.0,
+          183.0,
+          184.0,
+          185.0,
+          186.0,
+          187.0,
+          188.0,
+          189.0,
+          190.0,
+          191.0,
+          192.0,
+          193.0,
+          194.0,
+          195.0,
+          196.0,
+          197.0,
+          198.0,
+          199.0,
+          200.0,
+          201.0,
+          202.0,
+          203.0,
+          204.0,
+          205.0,
+          206.0,
+          207.0,
+          208.0,
+          209.0,
+          210.0,
+          211.0,
+          212.0,
+          213.0,
+          214.0,
+          215.0,
+          216.0,
+          217.0,
+          218.0,
+          219.0,
+          220.0,
+          221.0,
+          222.0,
+          223.0,
+          224.0,
+          225.0,
+          226.0,
+          227.0,
+          228.0,
+          229.0,
+          230.0,
+          231.0,
+          232.0,
+          233.0,
+          234.0,
+          235.0,
+          236.0,
+          237.0,
+          238.0,
+          239.0,
+          240.0,
+          241.0,
+          242.0,
+          243.0,
+          244.0,
+          245.0,
+          246.0,
+          247.0,
+          248.0,
+          249.0,
+          250.0,
+          251.0,
+          252.0,
+          253.0,
+          254.0,
+          255.0,
+          256.0,
+          257.0,
+          258.0,
+          259.0,
+          260.0,
+          261.0,
+          262.0,
+          263.0,
+          264.0,
+          265.0,
+          266.0,
+          267.0,
+          268.0,
+          269.0,
+          270.0,
+          271.0,
+          272.0,
+          273.0,
+          274.0,
+          275.0,
+          276.0,
+          277.0,
+          278.0,
+          279.0,
+          280.0,
+          281.0,
+          282.0,
+          283.0,
+          284.0,
+          285.0,
+          286.0,
+          287.0,
+          288.0,
+          289.0,
+          290.0,
+          291.0,
+          292.0,
+          293.0,
+          294.0,
+          295.0,
+          296.0,
+          297.0,
+          298.0,
+          299.0,
+          300.0,
+          301.0,
+          302.0,
+          303.0,
+          304.0,
+          305.0,
+          306.0,
+          307.0,
+          308.0,
+          309.0,
+          310.0,
+          311.0,
+          312.0,
+          313.0,
+          314.0,
+          315.0,
+          316.0,
+          317.0,
+          318.0,
+          319.0,
+          320.0,
+          321.0,
+          322.0,
+          323.0,
+          324.0,
+          325.0,
+          326.0,
+          327.0,
+          328.0,
+          329.0,
+          330.0,
+          331.0,
+          332.0,
+          333.0,
+          334.0,
+          335.0,
+          336.0,
+          337.0,
+          338.0,
+          339.0,
+          340.0,
+          341.0,
+          342.0,
+          343.0,
+          344.0,
+          345.0,
+          346.0,
+          347.0,
+          348.0,
+          349.0,
+          350.0,
+          351.0,
+          352.0,
+          353.0,
+          354.0,
+          355.0,
+          356.0,
+          357.0,
+          358.0,
+          359.0,
+          360.0,
+          361.0,
+          362.0,
+          363.0,
+          364.0,
+          365.0,
+          366.0,
+          367.0,
+          368.0,
+          369.0,
+          370.0,
+          371.0,
+          372.0,
+          373.0,
+          374.0,
+          375.0,
+          376.0,
+          377.0,
+          378.0,
+          379.0,
+          380.0,
+          381.0,
+          382.0,
+          383.0,
+          384.0,
+          385.0,
+          386.0,
+          387.0,
+          388.0,
+          389.0,
+          390.0,
+          391.0,
+          392.0,
+          393.0,
+          394.0,
+          395.0,
+          396.0,
+          397.0,
+          398.0,
+          399.0,
+          400.0,
+          401.0,
+          403.0,
+          405.0,
+          406.0,
+          407.0,
+          408.0,
+          409.0,
+          410.0,
+          411.0,
+          412.0,
+          413.0,
+          414.0,
+          415.0,
+          416.0,
+          417.0,
+          418.0,
+          419.0,
+          421.0,
+          422.0,
+          423.0,
+          424.0,
+          425.0,
+          426.0,
+          427.0,
+          428.0,
+          429.0,
+          430.0,
+          431.0,
+          432.0,
+          433.0,
+          434.0,
+          435.0,
+          436.0,
+          438.0,
+          439.0,
+          440.0,
+          441.0,
+          442.0,
+          443.0,
+          444.0,
+          446.0,
+          447.0,
+          448.0,
+          449.0,
+          451.0,
+          452.0,
+          453.0,
+          455.0,
+          457.0,
+          458.0,
+          459.0,
+          460.0,
+          461.0,
+          462.0,
+          463.0,
+          464.0,
+          465.0,
+          466.0,
+          468.0,
+          469.0,
+          470.0,
+          471.0,
+          472.0,
+          473.0,
+          474.0,
+          477.0,
+          478.0,
+          479.0,
+          480.0,
+          481.0,
+          483.0,
+          486.0,
+          487.0,
+          488.0,
+          490.0,
+          491.0,
+          494.0,
+          495.0,
+          496.0,
+          497.0,
+          498.0,
+          502.0,
+          504.0,
+          505.0,
+          506.0,
+          509.0,
+          511.0,
+          512.0,
+          513.0,
+          515.0,
+          516.0,
+          518.0,
+          521.0,
+          522.0,
+          525.0,
+          527.0,
+          532.0,
+          533.0,
+          534.0,
+          535.0,
+          536.0,
+          538.0,
+          542.0,
+          543.0,
+          544.0,
+          547.0,
+          548.0,
+          549.0,
+          550.0,
+          552.0,
+          555.0,
+          557.0,
+          559.0,
+          563.0,
+          571.0,
+          576.0,
+          577.0,
+          582.0,
+          584.0,
+          585.0,
+          586.0,
+          587.0,
+          590.0,
+          591.0,
+          593.0,
+          594.0,
+          595.0,
+          597.0,
+          598.0,
+          606.0,
+          609.0,
+          613.0,
+          622.0,
+          626.0,
+          637.0,
+          645.0,
+          651.0,
+          652.0,
+          655.0,
+          657.0,
+          662.0,
+          664.0,
+          700.0,
+          707.0,
+          714.0,
+          722.0,
+          754.0,
+          777.0,
+          790.0,
+          823.0,
+          967.0,
+          1001.0,
+          1029.0,
+          1031.0,
+          1087.0,
+          1099.0,
+          1328.0,
+          1367.0,
+          1400.0,
+          1449.0,
+          2190.0,
+          2594.0
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "length",
+        "mostly": 0.84
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "length",
+        "max_value": 0.07595307917888564,
+        "min_value": 0.07595307917888564
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "length",
+        "type_list": [
+          "FLOAT",
+          "DOUBLE",
+          "FLOAT4",
+          "FLOAT8",
+          "DOUBLE_PRECISION",
+          "NUMERIC",
+          "FloatType",
+          "DoubleType",
+          "float_",
+          "float16",
+          "float32",
+          "float64",
+          "number",
+          "DECIMAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "level",
+        "value_set": [
+          "free",
+          "paid"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "level"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "level",
+        "max_value": 0.00024826216484607745,
+        "min_value": 0.00024826216484607745
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "level",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "location",
+        "value_set": [
+          "Atlanta-Sandy Springs-Roswell, GA",
+          "Augusta-Richmond County, GA-SC",
+          "Birmingham-Hoover, AL",
+          "Cedar Rapids, IA",
+          "Chicago-Naperville-Elgin, IL-IN-WI",
+          "Columbia, SC",
+          "Dallas-Fort Worth-Arlington, TX",
+          "Detroit-Warren-Dearborn, MI",
+          "Elkhart-Goshen, IN",
+          "Eugene, OR",
+          "Eureka-Arcata-Fortuna, CA",
+          "Harrisburg-Carlisle, PA",
+          "Houston-The Woodlands-Sugar Land, TX",
+          "Indianapolis-Carmel-Anderson, IN",
+          "Janesville-Beloit, WI",
+          "Klamath Falls, OR",
+          "La Crosse-Onalaska, WI-MN",
+          "Lake Havasu City-Kingman, AZ",
+          "Lansing-East Lansing, MI",
+          "Las Cruces, NM",
+          "London, KY",
+          "Longview, TX",
+          "Los Angeles-Long Beach-Anaheim, CA",
+          "Lubbock, TX",
+          "Marinette, WI-MI",
+          "Miami-Fort Lauderdale-West Palm Beach, FL",
+          "Milwaukee-Waukesha-West Allis, WI",
+          "Minneapolis-St. Paul-Bloomington, MN-WI",
+          "Myrtle Beach-Conway-North Myrtle Beach, SC-NC",
+          "Nashville-Davidson--Murfreesboro--Franklin, TN",
+          "New Haven-Milford, CT",
+          "New Orleans-Metairie, LA",
+          "New York-Newark-Jersey City, NY-NJ-PA",
+          "Ogden-Clearfield, UT",
+          "Oxnard-Thousand Oaks-Ventura, CA",
+          "Palestine, TX",
+          "Parkersburg-Vienna, WV",
+          "Pensacola-Ferry Pass-Brent, FL",
+          "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+          "Phoenix-Mesa-Scottsdale, AZ",
+          "Plymouth, IN",
+          "Portland-South Portland, ME",
+          "Portland-Vancouver-Hillsboro, OR-WA",
+          "Raleigh, NC",
+          "Red Bluff, CA",
+          "Richmond, VA",
+          "Sacramento--Roseville--Arden-Arcade, CA",
+          "Saginaw, MI",
+          "Salinas, CA",
+          "Salt Lake City, UT",
+          "San Antonio-New Braunfels, TX",
+          "San Diego-Carlsbad, CA",
+          "San Francisco-Oakland-Hayward, CA",
+          "San Jose-Sunnyvale-Santa Clara, CA",
+          "Santa Rosa, CA",
+          "Seattle-Tacoma-Bellevue, WA",
+          "St. Louis, MO-IL",
+          "Tampa-St. Petersburg-Clearwater, FL",
+          "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+          "Waterloo-Cedar Falls, IA",
+          "Winston-Salem, NC",
+          "Youngstown-Warren-Boardman, OH-PA",
+          "Yuba City, CA"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "location",
+        "mostly": 0.96
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "location",
+        "max_value": 0.008108108108108109,
+        "min_value": 0.008108108108108109
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "location",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "method",
+        "value_set": [
+          "GET",
+          "PUT"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "method"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "method",
+        "max_value": 0.00024826216484607745,
+        "min_value": 0.00024826216484607745
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "method",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "page",
+        "value_set": [
+          "About",
+          "Downgrade",
+          "Error",
+          "Help",
+          "Home",
+          "Login",
+          "Logout",
+          "NextSong",
+          "Save Settings",
+          "Settings",
+          "Submit Downgrade",
+          "Submit Upgrade",
+          "Upgrade"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "page"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "page",
+        "max_value": 0.0016137040714995035,
+        "min_value": 0.0016137040714995035
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "page",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "registration",
+        "value_set": [
+          "1539908999796",
+          "1540006905796",
+          "1540008898796",
+          "1540013692796",
+          "1540130971796",
+          "1540146037796",
+          "1540223723796",
+          "1540266185796",
+          "1540283578796",
+          "1540306145796",
+          "1540344794796",
+          "1540369554796",
+          "1540465241796",
+          "1540472624796",
+          "1540492941796",
+          "1540505391796",
+          "1540511766796",
+          "1540558108796",
+          "1540583221796",
+          "1540585584796",
+          "1540613280796",
+          "1540621059796",
+          "1540636000796",
+          "1540644861796",
+          "1540646838796",
+          "1540664184796",
+          "1540676534796",
+          "1540679673796",
+          "1540685147796",
+          "1540685364796",
+          "1540699429796",
+          "1540708070796",
+          "1540766630796",
+          "1540772343796",
+          "1540794356796",
+          "1540809153796",
+          "1540809335796",
+          "1540810448796",
+          "1540810646796",
+          "1540817347796",
+          "1540823606796",
+          "1540828399796",
+          "1540829025796",
+          "1540832693796",
+          "1540835983796",
+          "1540852600796",
+          "1540853279796",
+          "1540856629796",
+          "1540870346796",
+          "1540871783796",
+          "1540872073796",
+          "1540880381796",
+          "1540891212796",
+          "1540895683796",
+          "1540897318796",
+          "1540906915796",
+          "1540907087796",
+          "1540919166796",
+          "1540931983796",
+          "1540940782796",
+          "1540968306796",
+          "1540970748796",
+          "1540971561796",
+          "1540975502796",
+          "1540975589796",
+          "1540976199796",
+          "1540991795796",
+          "1540992715796",
+          "1540992766796",
+          "1540998613796",
+          "1540999292796",
+          "1541003367796",
+          "1541007976796",
+          "1541013292796",
+          "1541016707796",
+          "1541020249796",
+          "1541022995796",
+          "1541029236796",
+          "1541032432796",
+          "1541033612796",
+          "1541044398796",
+          "1541045604796",
+          "1541048010796",
+          "1541056614796",
+          "1541057188796",
+          "1541058203796",
+          "1541059521796",
+          "1541062818796",
+          "1541064343796",
+          "1541077528796",
+          "1541078099796",
+          "1541079034796",
+          "1541081807796",
+          "1541085793796",
+          "1541091973796",
+          "1541097374796",
+          "1541098488796"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "registration",
+        "mostly": 0.96
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "registration",
+        "max_value": 0.012483912483912485,
+        "min_value": 0.012483912483912485
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "registration",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "session_id",
+        "max_value": 3,
+        "min_value": 3
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "session_id",
+        "max_value": 1114,
+        "min_value": 1114
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "session_id",
+        "max_value": 598.1,
+        "min_value": 598.1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "session_id",
+        "max_value": 605.0,
+        "min_value": 605.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": true,
+        "column": "session_id",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              136,
+              136
+            ],
+            [
+              372,
+              372
+            ],
+            [
+              605,
+              605
+            ],
+            [
+              833,
+              833
+            ],
+            [
+              1041,
+              1041
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "session_id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "session_id",
+        "max_value": 0.11680734856007945,
+        "min_value": 0.11680734856007945
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "session_id",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "INT",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType",
+          "DECIMAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "song",
+        "mostly": 0.84
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "song",
+        "max_value": 0.760850439882698,
+        "min_value": 0.760850439882698
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "song",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "status",
+        "max_value": 200,
+        "min_value": 200
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "status",
+        "max_value": 404,
+        "min_value": 404
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "status",
+        "max_value": 202.8,
+        "min_value": 202.8
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "status",
+        "max_value": 200.0,
+        "min_value": 200.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": true,
+        "column": "status",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              200,
+              200
+            ],
+            [
+              200,
+              200
+            ],
+            [
+              200,
+              200
+            ],
+            [
+              200,
+              200
+            ],
+            [
+              200,
+              200
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "status",
+        "value_set": [
+          200,
+          307,
+          404
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "status"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "status",
+        "max_value": 0.0003723932472691162,
+        "min_value": 0.0003723932472691162
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "status",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "INT",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType",
+          "DECIMAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "user_agent",
+        "value_set": [
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10) AppleWebKit/538.46 (KHTML, like Gecko) Version/8.0 Safari/538.46\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.10 (KHTML, like Gecko) Version/5.1.9 Safari/534.59.10\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/537.75.14\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/537.75.14\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.77.4 (KHTML, like Gecko) Version/7.0.5 Safari/537.77.4\"",
+          "\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.78.2 (KHTML, like Gecko) Version/7.0.6 Safari/537.78.2\"",
+          "\"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36\"",
+          "\"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36\"",
+          "\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36\"",
+          "\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36\"",
+          "\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36\"",
+          "\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.102 Safari/537.36\"",
+          "\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36\"",
+          "\"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36\"",
+          "\"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36\"",
+          "\"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36\"",
+          "\"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36\"",
+          "\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36\"",
+          "\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/36.0.1985.125 Chrome/36.0.1985.125 Safari/537.36\"",
+          "\"Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D201 Safari/9537.53\"",
+          "\"Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53\"",
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:31.0) Gecko/20100101 Firefox/31.0",
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:30.0) Gecko/20100101 Firefox/30.0",
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:31.0) Gecko/20100101 Firefox/31.0",
+          "Mozilla/5.0 (Windows NT 5.1; rv:31.0) Gecko/20100101 Firefox/31.0",
+          "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",
+          "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0",
+          "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:32.0) Gecko/20100101 Firefox/32.0",
+          "Mozilla/5.0 (Windows NT 6.1; rv:31.0) Gecko/20100101 Firefox/31.0",
+          "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko",
+          "Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0",
+          "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)",
+          "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "user_agent",
+        "mostly": 0.96
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "user_agent",
+        "max_value": 0.005148005148005148,
+        "min_value": 0.005148005148005148
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "user_agent",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "user_id",
+        "max_value": 2,
+        "min_value": 2
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "user_id",
+        "max_value": 101,
+        "min_value": 101
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "user_id",
+        "max_value": 54.4,
+        "min_value": 54.4
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "user_id",
+        "max_value": 49.0,
+        "min_value": 49.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": true,
+        "column": "user_id",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              15,
+              15
+            ],
+            [
+              29,
+              29
+            ],
+            [
+              49,
+              49
+            ],
+            [
+              80,
+              80
+            ],
+            [
+              97,
+              97
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "user_id",
+        "value_set": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "user_id",
+        "mostly": 0.96
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "user_id",
+        "max_value": 0.012483912483912485,
+        "min_value": 0.012483912483912485
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "user_id",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "INT",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType",
+          "DECIMAL"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "columns": {
+      "artist": {
+        "description": ""
+      },
+      "auth": {
+        "description": ""
+      },
+      "first_name": {
+        "description": ""
+      },
+      "gender": {
+        "description": ""
+      },
+      "item_in_session": {
+        "description": ""
+      },
+      "last_name": {
+        "description": ""
+      },
+      "length": {
+        "description": ""
+      },
+      "level": {
+        "description": ""
+      },
+      "location": {
+        "description": ""
+      },
+      "method": {
+        "description": ""
+      },
+      "page": {
+        "description": ""
+      },
+      "registration": {
+        "description": ""
+      },
+      "session_id": {
+        "description": ""
+      },
+      "song": {
+        "description": ""
+      },
+      "status": {
+        "description": ""
+      },
+      "ts": {
+        "description": ""
+      },
+      "user_agent": {
+        "description": ""
+      },
+      "user_id": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.13.19"
+  }
+}
