@@ -4,7 +4,7 @@ The goal for this project is to build an ETL pipeline that extracts JSON logs an
 
 ## Project Files
 ### dwh.cfg
-    - Provides credentials, S3 bucket location, and defines cluster nodes
+    * Provides credentials, S3 bucket location, and defines cluster nodes
 
 ### sql_queries.py
 SQL queries for:
