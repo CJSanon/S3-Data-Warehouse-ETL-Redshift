@@ -1,7 +1,8 @@
 # Data Pipeline from S3 Bucket to AWS Redshift cluster
 ---
+
 The goal for this project is to build an ETL pipeline that extracts JSON logs and metadata from S3 buckets, stages them in Redshift, and transforms the staged data into a set of dimensional tables that can be queried for insights on users
----
+
 
 ## Project Files
 ### dwh.cfg
