@@ -58,7 +58,7 @@ Run `python3 etl.py` in terminal
 
 <em>Remember to run the clean up cells at the bottom of the notebook to avoid a massive bill :)</em>
 ---
-## Data Quality Check
+## Data Quality Tests
 Great Expectations(GE) is a Python library that allows for testing data, detecting data quality issues, and document ingested data.
 GE takes assertions on the data (Expectations) that can are then used to validate data in a pass or fail test.
 
