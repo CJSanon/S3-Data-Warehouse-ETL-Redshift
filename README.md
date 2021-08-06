@@ -60,7 +60,7 @@ Run `python3 etl.py` in terminal
 ---
 ## Data Quality Tests
 Great Expectations(GE) is a Python library that allows for testing data, detecting data quality issues, and document ingested data.
-GE takes assertions on the data (Expectations) that can are then used to validate data in a pass or fail test.
+GE takes assertions on the data (Expectations) that are then used to validate data in a pass or fail test.
 
 ### Configure Redshift Datasource
 The following steps can all be found here: https://docs.greatexpectations.io/en/latest/guides/how_to_guides/configuring_datasources/how_to_configure_a_redshift_datasource.html
